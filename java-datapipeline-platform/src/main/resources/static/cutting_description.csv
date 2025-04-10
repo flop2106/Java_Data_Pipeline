@@ -1,0 +1,101 @@
+Depth (m),Lithology,Cutting Description,Rate of Penetration,Rotation Per Minute,Mud Log Value,Gamma Ray,Resistivity,US/ft
+10.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+11.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+12.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+13.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+14.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+15.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+16.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+17.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+18.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+19.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+20.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+21.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",9.0,122.0,11.0,120,70,110
+22.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+23.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+24.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+25.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+26.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+27.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+28.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+29.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+30.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+31.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+32.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+33.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",9.0,122.0,11.0,120,70,110
+34.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+35.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+36.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+37.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+38.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+39.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+40.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+41.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+42.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+43.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+44.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+45.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",9.0,122.0,11.0,120,70,110
+46.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+47.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+48.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+49.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+50.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+51.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+52.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+53.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+54.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+55.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+56.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+57.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",9.0,122.0,11.0,120,70,110
+58.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+59.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+60.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+61.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+62.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+63.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+64.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+65.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+66.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+67.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+68.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+69.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",9.0,122.0,11.0,120,70,110
+70.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+71.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+72.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+73.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+74.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+75.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+76.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+77.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+78.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+79.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+80.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+81.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",9.0,122.0,11.0,120,70,110
+82.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+83.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+84.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+85.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+86.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+87.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+88.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+89.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+90.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+91.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+92.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+93.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",9.0,122.0,11.0,90,80,80
+94.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+95.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+96.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+97.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
+98.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.5,120.5,10.5,30,100,100
+99.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",8.7,121.0,10.7,120,70,110
+100.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.9,121.5,10.9,180,25,120
+101.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",9.0,122.0,11.0,30,100,100
+102.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.5,120.5,10.5,90,80,80
+103.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",8.7,121.0,10.7,180,25,120
+104.0,Limestone,"White limestone; thick-bedded, coarse, highly indurated, with visible fossils and high hardness.",8.9,121.5,10.9,30,100,100
+105.0,Siltstone,"Reddish-brown siltstone; fine-grained, soft, poorly cemented, with an earthy texture.",9.0,122.0,11.0,120,70,110
+106.0,Shale,"Grayish-brown shale; fine-grained, soft, with slight oil show and dull luster.",8.5,120.5,10.5,180,25,120
+107.0,Limestone,"Light gray limestone; massive, coarse-grained, well-indurated, containing fossil fragments.",8.7,121.0,10.7,30,100,100
+108.0,Sandstone,"Buff silty sandstone; medium-bedded, moderately cemented, with clay streaks and moderate hardness.",8.9,121.5,10.9,90,80,80
+109.0,Shale,"Dark gray shale; very fine-grained, soft, homogeneous, with minor oil staining.",9.0,122.0,11.0,180,25,120
