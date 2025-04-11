@@ -18,9 +18,7 @@ if not exist "%TEMP_TOOLS_DIR%\openjdk" (
     echo Extracting OpenJDK 21...
     powershell -Command "Expand-Archive -Path '%TOOLS_DIR%\openjdk-21+35_windows-x64_bin.zip' -DestinationPath '%TEMP_TOOLS_DIR%'"
     REM Rename the extracted folder which may be named something like 'jdk-21'
-    for /d %%i in ("%TEMP_TOOLS_DIR%\jdk*") do (
-        ren "%%i" "openjdk"
-    )
+    ren "%TEMP_TOOLS_DIR%\jdk-21" "openjdk"
 )
 
 REM --- Extract Maven ---
@@ -60,7 +58,7 @@ echo.
 
 REM --- Start the Frontend and Backend ---
 echo Starting Frontend (React)...
-start "Frontend" cmd /k "cd /d frontend-react/ml-pipeline-frontend && npm start"
+start "Frontend" cmd /k "cd /d frontend-react/ml-pipeline-frontend && npm install --force && npm start"
 
 echo Starting Backend (Spring Boot)...
 start "Backend" cmd /k "cd /d java-datapipeline-platform && mvn spring-boot:run"
