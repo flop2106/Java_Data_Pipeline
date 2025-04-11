@@ -4,3 +4,63 @@
 /Java_ML_Pipeline.code-workspace
 /java-datapipeline-platform/temp_env
 /java-datapipeline-platform/.venv
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/frontend-react/ml-pipeline-frontend/node_modules
+/frontend-react/ml-pipeline-frontend/.pnp
+/frontend-react/ml-pipeline-frontend/.pnp.js
+
+# testing
+/frontend-react/ml-pipeline-frontend/coverage
+
+# production
+/frontend-react/ml-pipeline-frontend/build
+
+# misc
+/frontend-react/ml-pipeline-frontend/.DS_Store
+/frontend-react/ml-pipeline-frontend/.env.local
+/frontend-react/ml-pipeline-frontend/.env.development.local
+/frontend-react/ml-pipeline-frontend/.env.test.local
+/frontend-react/ml-pipeline-frontend/.env.production.local
+
+/frontend-react/ml-pipeline-frontend/npm-debug.log*
+/frontend-react/ml-pipeline-frontend/yarn-debug.log*
+/frontend-react/ml-pipeline-frontend/yarn-error.log*
+
+/java-datapipeline-platform/HELP.md
+/java-datapipeline-platform/target/
+/java-datapipeline-platform/!.mvn/wrapper/maven-wrapper.jar
+/java-datapipeline-platform/!**/src/main/**/target/
+!/java-datapipeline-platform/**/src/test/**/target/
+
+### STS ###
+/java-datapipeline-platform/.apt_generated
+/java-datapipeline-platform/.classpath
+/java-datapipeline-platform/.factorypath
+/java-datapipeline-platform/.project
+/java-datapipeline-platform/.settings
+/java-datapipeline-platform/.springBeans
+/java-datapipeline-platform/.sts4-cache
+
+### IntelliJ IDEA ###
+/java-datapipeline-platform/.idea
+/java-datapipeline-platform/*.iws
+/java-datapipeline-platform/*.iml
+/java-datapipeline-platform/*.ipr
+
+### NetBeans ###
+/java-datapipeline-platform/nbproject/private/
+/java-datapipeline-platform/nbbuild/
+/java-datapipeline-platform/dist/
+/java-datapipeline-platform/nbdist/
+/java-datapipeline-platform/.nb-gradle/
+/java-datapipeline-platform/build/
+/java-datapipeline-platform/!**/src/main/**/build/
+/java-datapipeline-platform/!**/src/test/**/build/
+
+### VS Code ###
+/java-datapipeline-platform/.vscode/
+/java-datapipeline-platform/.venv/
+
