@@ -21,12 +21,15 @@ Java Data Pipeline Platform is a full-stack application mocking on how Apache Ai
 
 - **Java Development Kit (JDK):**  
   Version 21.0.5 (or later) is recommended. Download from [Eclipse Adoptium](https://adoptium.net/).
+  https://download.java.net/openjdk/jdk21/ri/openjdk-21+35_windows-x64_bin.zip
 
 - **Apache Maven:**  
   Used for building and running the Spring Boot application. Make sure `mvn` is accessible from your command line.
-
+  https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip
+  
 - **Node.js and NPM:**  
   Required to run the React front end. Download from [nodejs.org](https://nodejs.org/).
+  https://nodejs.org/dist/v22.14.0/node-v22.14.0-win-x64.zip
 
 - **Git:**  
   To clone and manage the repository.
