@@ -1,0 +1,1 @@
+Paste the .zip file for openjdk, maven and node in this folder. The Python_Orchestration_Pipeline.bat will automatically create a local temporary environment to run the apps.

@@ -32,7 +32,8 @@ Java Data Pipeline Platform is a full-stack application mocking on how Apache Ai
   To clone and manage the repository.
 
 - **IMPOTANT FOR MODULARITY:**
-  Copy and paste the zip files downloaded for JDK, Maven and Node.js to /tools
+  Copy and paste the zip files downloaded for JDK, Maven and Node.js to /tools folder.
+  The Python_Orchestration_Pipeline.bat will automatically create a local temporary environment to run the apps.
 
 
 ## Running the Application
