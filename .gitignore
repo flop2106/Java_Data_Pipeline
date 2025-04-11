@@ -64,3 +64,6 @@
 /java-datapipeline-platform/.vscode/
 /java-datapipeline-platform/.venv/
 
+/temp_tools/
+/tools/
+
