@@ -15,7 +15,7 @@ def send_message_to_openai(message: str, role: str) -> str:
     API_KEY = os.getenv('openai')
     
     request_body = {
-        "model": "gpt-4o-mini",  # Use "gpt-3.5-turbo" if preferred
+        "model": "gpt-4o-mini",
         "messages": [
             {
                 "role": "system",
@@ -28,6 +28,7 @@ def send_message_to_openai(message: str, role: str) -> str:
         ],
         "temperature": 0.7
     }
+    print(request_body)
     try:
         headers = {
             "Authorization": f"Bearer {API_KEY}",
@@ -40,7 +41,6 @@ def send_message_to_openai(message: str, role: str) -> str:
     except Exception as e:
         return f"Error communicating with OpenAI: {str(e)}"
 
-# For testing purpose:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="OpenAI Result")
     parser.add_argument("--folder_path", type= str, default = r"Java_Data_Pipeline\java-datapipeline-platform\python\News_OpenAI_Summary")
@@ -58,4 +58,4 @@ if __name__ == "__main__":
     respond = send_message_to_openai(query_full, role)
     print("Response from OpenAI:")
     print(respond)
-    pd.DataFrame({"query":[query], "role":[role], "respond": [respond]}).to_csv(fr"{folder_path}\respond.csv")
+    pd.DataFrame({"query":[query], "role":[role], "respond": [respond]}).to_json(fr"{folder_path}\respond.json")

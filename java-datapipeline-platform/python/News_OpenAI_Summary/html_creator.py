@@ -8,7 +8,7 @@ args = parser.parse_args()
 
 folder_path = args.folder_path
 
-openai_result = pd.read_csv(fr"{folder_path}\respond.csv")
+openai_result = pd.read_json(fr"{folder_path}\respond.json")
 news_list = pd.read_csv(fr"{folder_path}\news_list.csv")
 
 html_openai_result = f"""
@@ -16,11 +16,11 @@ html_openai_result = f"""
     <html>
     <body>
         <h1>QUERY:</h1>
-        <h3>{openai_result["query"].tolist()[0]}</h3>
+        <p>{openai_result["query"].tolist()[0]}</p>
         <h2>ROLE:</h1>
         <p>{openai_result["role"].tolist()[0]}</p>
         <h2>OpenAI Respond:</h1>
-        <p>{openai_result["respond"].tolist()[0]}</p>
+        <pre>{openai_result["respond"].tolist()[0]}</pre>
 """
 html_content = ""
 for i in range(len(news_list)):
@@ -28,10 +28,13 @@ for i in range(len(news_list)):
     <p></p>
     <h3>{news_list["Title"].tolist()[i]}</h3>
     <a href="{news_list["url"].tolist()[i]}">{news_list["url"].tolist()[i]}</a>
-    <p>{news_list["news_content"].tolist()[i]}</p>
+    <p>{str(news_list["news_content"].tolist()[i])}</p>
     '''
 
 html_footing = "</body></html>"
 
-with open(rf"{folder_path}\index.html","w") as index:
-    index.write(html_openai_result + html_content + html_footing)
+with open(rf"{folder_path}\index.html","w",encoding="utf-8") as index:
+    try:
+        index.write(html_openai_result + html_content + html_footing)
+    except:
+        index.write(html_openai_result)
