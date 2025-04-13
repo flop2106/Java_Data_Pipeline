@@ -1,13 +1,15 @@
 // src/components/DraggableStep.js
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useDrag, useDrop } from "react-dnd";
 
 const ItemTypes = {
   STEP: "step",
 };
 
-const DraggableStep = ({ step, index, moveStep, onSelect, onDelete }) => {
+const DraggableStep = ({ step, index, moveStep, onSelect, onDelete, onUpdateTitle }) => {
   const ref = useRef(null);
+  const [isEditingTitle, setIsEditingTitle] = useState(false);
+  const [tempTitle, setTempTitle] = useState(step.nodeName || step.type);
 
   const [, drop] = useDrop({
     accept: ItemTypes.STEP,
@@ -29,7 +31,34 @@ const DraggableStep = ({ step, index, moveStep, onSelect, onDelete }) => {
 
   drag(drop(ref));
 
-  // Display step.nodeName if available, otherwise fallback to step.type
+  // Handle title click to enable editing
+  const handleTitleClick = (e) => {
+    e.stopPropagation(); // Prevent triggering onSelect/drag
+    if (onUpdateTitle) { // Only if renaming is allowed
+      setIsEditingTitle(true);
+    }
+  };
+
+  // Handle title changes while editing
+  const handleTitleChange = (e) => {
+    setTempTitle(e.target.value);
+  };
+
+  // Finalize title update when input loses focus or Enter is pressed
+  const finalizeTitleUpdate = () => {
+    if (onUpdateTitle) {
+      onUpdateTitle(index, tempTitle);
+    }
+    setIsEditingTitle(false);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      finalizeTitleUpdate();
+    }
+  };
+
+  // Use the node name if available, otherwise fallback to step type
   const displayName = step.nodeName || step.type;
 
   return (
@@ -46,7 +75,21 @@ const DraggableStep = ({ step, index, moveStep, onSelect, onDelete }) => {
         position: "relative",
       }}
     >
-      <strong>{displayName}</strong>
+      {isEditingTitle ? (
+        <input
+          type="text"
+          value={tempTitle}
+          onChange={handleTitleChange}
+          onBlur={finalizeTitleUpdate}
+          onKeyDown={handleKeyDown}
+          autoFocus
+          style={{ fontSize: "1em" }}
+        />
+      ) : (
+        <strong onClick={handleTitleClick} style={{ cursor: onUpdateTitle ? "text" : "default" }}>
+          {displayName}
+        </strong>
+      )}
       <div style={{ fontSize: "0.8em", marginTop: "4px" }}>
         Config: {JSON.stringify(step.config)}
       </div>

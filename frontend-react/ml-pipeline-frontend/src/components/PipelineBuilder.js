@@ -35,13 +35,16 @@ const PipelineBuilder = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  // Add a new step with default configuration
+  // Add a new step with default configuration.
   const addStep = (type) => {
     let newStep = { type, config: {} };
     if (type === "CSVDatabase") {
       newStep.config = { csvPath: "" };
     } else if (type === "PythonScript") {
-      newStep.type = "PythonScript"; // New type name
+      // Prompt user for a custom node name.
+      let nodeName = window.prompt("Enter a name for the Python Script node:", "PythonScript");
+      newStep.type = "PythonScript";
+      newStep.nodeName = nodeName ? nodeName : "PythonScript";
       newStep.config = {
         scriptPath: "",
         parameters: {}
@@ -50,7 +53,7 @@ const PipelineBuilder = () => {
     setSteps([...steps, newStep]);
   };
 
-  // Reorder steps via drag-and-drop
+  // Reorder steps via drag-and-drop.
   const moveStep = useCallback(
     (fromIndex, toIndex) => {
       const updatedSteps = [...steps];
@@ -61,27 +64,34 @@ const PipelineBuilder = () => {
     [steps]
   );
 
-  // Update the configuration of a step
+  // Update the configuration of a step.
   const updateStepConfig = (index, newConfig) => {
     const updated = [...steps];
     updated[index].config = newConfig;
     setSteps(updated);
   };
 
-  // Open configuration panel for a step
+  // Update the title of a step.
+  const updateStepTitle = (index, newTitle) => {
+    const updated = [...steps];
+    updated[index].nodeName = newTitle;
+    setSteps(updated);
+  };
+
+  // Open configuration panel for a step.
   const handleSelectStep = (index) => {
     setSelectedStepIndex(index);
     setShowConfigPanel(true);
   };
 
-  // Delete a step
+  // Delete a step.
   const handleDeleteStep = (index) => {
     const updatedSteps = [...steps];
     updatedSteps.splice(index, 1);
     setSteps(updatedSteps);
   };
 
-  // Show JSON modal for viewing the pipeline payload
+  // Show JSON modal for viewing the pipeline payload.
   const handleViewJson = () => {
     setShowJsonModal(true);
   };
@@ -89,7 +99,7 @@ const PipelineBuilder = () => {
     setShowJsonModal(false);
   };
 
-  // Show Start Python panel
+  // Show Start Python panel.
   const handleStartPython = () => {
     setShowStartPythonPanel(true);
   };
@@ -97,7 +107,7 @@ const PipelineBuilder = () => {
     setShowStartPythonPanel(false);
   };
 
-  // Stop Python environment
+  // Stop Python environment.
   const stopPython = async () => {
     try {
       const response = await fetch("http://localhost:8080/api/stopPython", {
@@ -113,7 +123,7 @@ const PipelineBuilder = () => {
     }
   };
 
-  // Execute the pipeline by calling the API
+  // Execute the pipeline by calling the API.
   const executePipeline = async () => {
     setShowExecutionModal(true);
     setExecutionStatus(null);
@@ -146,7 +156,7 @@ const PipelineBuilder = () => {
     }
   };
 
-  // Close the execution modal
+  // Close the execution modal.
   const closeExecutionModal = () => {
     setShowExecutionModal(false);
   };
@@ -158,12 +168,10 @@ const PipelineBuilder = () => {
         <div className="col-md-8">
           <h2>Pipeline Builder</h2>
           <div className="mb-3">
-            {/*
-            <button className="btn btn-success me-2" onClick={() => addStep("CSVDatabase")}>
-              Add CSVDatabase
-            </button>
-            */}
-            <button className="btn btn-success me-2" onClick={() => addStep("PythonScript")}>
+            <button
+              className="btn btn-success me-2"
+              onClick={() => addStep("PythonScript")}
+            >
               Add PythonScript
             </button>
             <button className="btn btn-info" onClick={handleViewJson}>
@@ -171,7 +179,10 @@ const PipelineBuilder = () => {
             </button>
           </div>
           <div className="mb-3">
-            <button className="btn btn-primary me-2" onClick={handleStartPython}>
+            <button
+              className="btn btn-primary me-2"
+              onClick={handleStartPython}
+            >
               Start Python
             </button>
             <button className="btn btn-danger" onClick={stopPython}>
@@ -190,6 +201,7 @@ const PipelineBuilder = () => {
                   moveStep={moveStep}
                   onSelect={handleSelectStep}
                   onDelete={handleDeleteStep}
+                  onUpdateTitle={updateStepTitle}  // Pass update function
                 />
                 {index < steps.length - 1 && (
                   <div
