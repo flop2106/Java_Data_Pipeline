@@ -66,5 +66,5 @@
 
 /temp_tools/
 /tools/*.zip
-/java-datapipeline-platform/python/News_OpenAI_Summary
+/java-datapipeline-platform/python/News_OpenAI_Summary/.env
 
